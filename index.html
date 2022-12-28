@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e524586f66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!--logo-->
+        <div>
+            <img id="logo" src="Images Booki/logo/Booki.png" alt="logo Booki">
+
+        </div>
+        <!--menu-->
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a class="navigation" href="#hebergement">Hébergements </a>
+                </li>
+                <li>
+                    <a class="navigation" href="#activite">Activités</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <section class="find"> <!--trouvez votre hébergement---------------------------------->
+        <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+        <h4>En plein centre-ville ou en pleine nature</h4>
+        <div class="formulaire"> <!--formulaire de recherche-->
+            <div id="localisation">
+                <span><i class="fa-solid fa-location-dot" id="location"></i></span>
+            </div>
+            <div>
+                <form action="">
+                    <input type="text" placeholder="Marseille, France">
+                </form>
+            </div>
+            <div class="button">
+                <button type="button">Rechercher</button>
+            </div>
+
+        </div>
+        <div class="filtergroup"> <!--filtres-->
+            <h3>Filtres</h3>
+            <div class="filters"> <!--les différents filtres-->
+
+                <div class="cardfilter">
+                    <span><i class="fa-sharp fa-solid fa-money-bill-wave"></i></span>
+                    <input type="checkbox" id="economic">
+                    <label for="economic">Économique</label>
+                </div>
+                <div class="cardfilter">
+                    <span><i class="fa-solid fa-person"></i></span>
+                    <input type="checkbox" id="family">
+                    <label for="family">Familial</label>
+                </div>
+
+
+
+                <div class="cardfilter">
+                    <span><i class="fa-solid fa-heart"></i></span>
+                    <input type="checkbox" id="romantic">
+                    <label for="romantic">Romantique</label>
+                </div>
+                <div class="cardfilter">
+                    <span><i class="fa-solid fa-dog"></i></span>
+                    <input type="checkbox" id="animals">
+                    <label for="animals">Animaux autorisés</label>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="info"> <!--infos-->
+            <span><i class="fa-solid fa-info" id="iconinfo"></i></span>
+            <p>Plus de 500 logements disponibles dans cette ville</p>
+
+
+        </div>
+
+    </section>
+    <main>
+
+        <section id="hebergement"> <!--hébergements à Marseille------------------------------->
+            <h2>Hébergements à Marseille</h2>
+            <div class="cards">
+
+                <article class="card">
+                    <a href="">
+                        <div class="containcard">
+                    
+                            <img class="picsmarseille" src="/Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt=" Auberge la Cannebière">
+                        </div>
+                        <div class="container">
+                            <h3>Auberge la Canebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <!--icone étoile à insérer-->
+                            <div class="stars"> <!--notation 4 étoiles bleues + 1 étoile grise-->
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star" id="greystar"></i></span>
+                    
+                            </div>
+                        </div>
+                    </a>
+
+
+                </article>
+                <article class="card">
+                    <div>
+                        <img src="/Images Booki/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt=" Auberge la Cannebière" width="100">
+                    </div>
+                    <div>
+                        <h3>Hôtel du port</h3>
+                        <p>Nuit à partir de 52€</p>
+                        <!--icone étoile à insérer-->
+
+                    </div>
+
+                </article>
+                <article class="card">
+                    <div>
+                        <img src="/Images Booki/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt=" Auberge la Cannebière" width="100">
+                    </div>
+                    <div>
+                        <h3>Hôtel Les mouettes</h3>
+                        <p>Nuit à partir de 76€</p>
+                        <!--icone étoile à insérer-->
+                    </div>
+
+                </article>
+
+
+
+                <article class="card">
+                    <div>
+                        <img src="/Images Booki/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt=" Auberge la Cannebière" width="100">
+                    </div>
+                    <div>
+                        <h3>Hôtel de la mer</h3>
+                        <p>Nuit à partir de 46€</p>
+                        <!--icone étoile à insérer-->
+                    </div>
+
+                </article>
+                <article class="card">
+                    <div>
+                        <img src="/Images Booki/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt=" Auberge la Cannebière" width="100">
+                    </div>
+                    <div>
+                        <h3>Auberge Le panier</h3>
+                        <p>Nuit à partir de 23€</p>
+                        <!--icone étoile à insérer-->
+                    </div>
+
+                </article>
+                <article class="card">
+                    <div>
+                        <img src="/Images Booki/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt=" Auberge la Cannebière" width="100">
+                    </div>
+                    <div>
+                        <h3>Hôtel Chez Amina</h3>
+                        <p>Nuit à partir de 95€</p>
+                        <!--icone étoile à insérer-->
+                    </div>
+
+                </article>
+            </div>
+
+
+            <div>
+                <h3><a href="">Afficher plus</a></h3>
+            </div>
+
+        </section>
+        <section id="pop"> <!-- les plus poulaires-------------------------------------------->
+
+            <h2 class="titrepop"><span> plus populaires</span> <span><i class="fa-solid fa-chart-line"></i></span></h2>
+
+            <div id="cardspop">
+                <article class="cardpop">
+                    <div class="photopop">
+                        <img src="/Images Booki/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt=" Auberge la Cannebière" width="100">
+                    </div>
+                    <div>
+                        <h3>Hôtel Le soleil du matin</h3>
+                        <p>Nuit à partir de 128€</p>
+                        <!--icone étoile à insérer-->
+                    </div>
+
+                </article>
+                <article class="cardpop">
+                    <div>
+                        <img src="/Images Booki/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt=" Auberge la Cannebière" width="100">
+                    </div>
+                    <div>
+                        <h3>Chambres d'Hôtes au coeur de l'eau</h3>
+                        <p>Nuit à partir de 71€</p>
+                        <!--icone étoile à insérer-->
+                    </div>
+
+                </article>
+                <article class="cardpop">
+                    <div>
+                        <img src="/Images Booki/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt=" Auberge la Cannebière" width="100">
+                    </div>
+                    <div>
+                        <h3>Hôtel Bleu et blanc</h3>
+                        <p>Nuit à partir de 68€</p>
+                        <!--icone étoile à insérer-->
+                    </div>
+
+                </article>
+            </div>
+
+        </section>
+
+
+        <section id="activite"> <!-- activités à Marseille----------------------------------->
+            <h2>Activités à Marseille</h2>
+
+            <!--photos des quartiers de Marseilles-->
+            <div class="quartiers">
+                <div class="quartier"> <!--vieux port-->
+                    <img src="images Booki/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                        alt="Photo du Vieux-Port" width="100">
+                    <h3>Vieux-Port</h3>
+
+                </div>
+                <div class="quartier"> <!--Fort de Pomègues-->
+                    <img src="images Booki/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                        alt="photo du port de Pomègues" width="100">
+                    <h3>Fort de Pomègues</h3>
+
+                </div>
+                <div class="quartier"> <!--Parc national des Calanques-->
+                    <img src="images Booki/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                        alt="photo du Parc national des Calanques" width="100">
+                    <h3>Parc national des Calanques</h3>
+
+                </div>
+                <div class="quartier"> <!--Notre-Dame-de-la-Garde-->
+                    <img src="/Images Booki/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                        alt="photo de Notre-Dame-de-la-Garde" width="100">
+                    <h3>Notre-Dame-de-la-Garde</h3>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <!--3 éléments composés d'un titre et d'une liste ----------------------------------->
+        <nav class="foot">
+            <h3 class="foottitle">À propos</h3>
+            <ul class="footnav">
+                <li>Fonctionnement du site</li>
+                <li>Conditions générales</li>
+                <li>Données et confidentialité</li>
+            </ul>
+
+        </nav>
+        <nav class="foot">
+            <h3 class="foottitle">Nos hébergements</h3>
+            <ul class="footnav">
+                <li>Charte qualité</li>
+                <li>Proposer votre Hôtel</li>
+            </ul>
+
+        </nav>
+        <nav class="foot">
+            <h3 class="foottitle">Assistance</h3>
+            <ul class="footnav">
+                <li>Centre d'aide</li>
+                <li>Nous contacter</li>
+            </ul>
+
+        </nav>
+    </footer>
+</body>
+
+</html>
