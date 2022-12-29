@@ -1,5 +1,5 @@
 /*importation de police raleway----------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 /*reset----------------------------------------------*/
 * {
@@ -11,11 +11,11 @@
 /*comportement général-------------------------------*/
 
 body{
-    min-width: 992px;
+    
     max-width: 1400px;
+    margin: auto;
     font-family: 'Raleway', sans-serif;
-    /*margin-left: auto;
-    margin-right: auto; ???????*/
+    font-weight: 400;
     
    
 }
@@ -26,7 +26,7 @@ ul{
 i{
     color: #0065FC;
 }
-#greystar{
+.greystar{
     color: grey;
 }
 
@@ -55,8 +55,7 @@ li {
 header {
     display: flex;
     justify-content: space-between; 
-    margin-left: 55px;
-    margin-right: 77px; 
+   
     padding-top: 40px; 
     padding-bottom: 63px;
     align-items: center;
@@ -90,10 +89,7 @@ header {
 
 /*Trouvez votre hébergement--------------------------------------------*/
 
-.find {
-    margin-left: 50px;
-    margin-right: 50px;
-}
+
 
 h1 {
     padding-bottom: 8px;
@@ -248,14 +244,17 @@ main{
 
 .containcard {
     width: 100%;
+    height: 300px;
+    border: 1px solid red ;
 }
 
 
 .picsmarseille {
     
    width: 100%;
-   height: 110px;
-    border-radius: 20px 20px 0px 0px;
+   height: 100%;
+   object-fit: cover;
+    
     
     
 }
