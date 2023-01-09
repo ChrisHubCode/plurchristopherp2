@@ -13,17 +13,17 @@
 <body>
     <header>
         <!--logo-->
-        <div>
+        <div class="containlogo">
             <img id="logo" src="Images Booki/logo/Booki.png" alt="logo Booki">
 
         </div>
         <!--menu-->
-        <nav>
+        <nav class="containmenu">
             <ul class="menu">
-                <li>
+                <li class="listnav">
                     <a class="navigation" href="#hebergement">Hébergements </a>
                 </li>
-                <li>
+                <li class="listnav">
                     <a class="navigation" href="#activite">Activités</a>
                 </li>
             </ul>
@@ -46,8 +46,9 @@
                         <input type="text" id="looking" placeholder="Marseille, France">
                     </form>
                 </div>
-                <div class="button">
-                    <button type="button">Rechercher</button>
+                <div class="buttonlook">
+                    <button type="button"><span><i class="fa-solid fa-magnifying-glass" id="glass"></i></span><span id="search">Rechercher</span></button>
+                    
                 </div>
 
             </div>
@@ -56,25 +57,25 @@
                 <div class="filters"> <!--les différents filtres-->
 
                     <label for="economic" class="cardfilter">
-                        <span><i class="fa-sharp fa-solid fa-money-bill-wave"></i></span>
+                        <span class="iconfilter"><i class="fa-sharp fa-solid fa-money-bill-wave"></i></span>
                         <input type="checkbox" id="economic">
                         Économique
                     </label>
 
                     <label for="family" class="cardfilter">
-                        <span><i class="fa-solid fa-person"></i></span>
+                        <span class="iconfilter"><i class="fa-solid fa-person"></i></span>
                         <input type="checkbox" id="family">
                         Familial
                     </label>
                     
                     <label for="romantic" class="cardfilter">
-                        <span><i class="fa-solid fa-heart"></i></span>
+                        <span class="iconfilter"><i class="fa-solid fa-heart"></i></span>
                         <input type="checkbox" id="romantic">
                         Romantique
                     </label>
                     
                     <label for="animals" class="cardfilter">
-                        <span><i class="fa-solid fa-dog"></i></span>
+                        <span class="iconfilter"><i class="fa-solid fa-dog"></i></span>
                         <input type="checkbox" id="animals">
                         Animaux autorisés
                     </label>
@@ -251,7 +252,7 @@
 
 
             <div>
-                <h3><a href="">Afficher plus</a></h3>
+                <h3 id="more"><a href="">Afficher plus</a></h3>
             </div>
 
         </section>

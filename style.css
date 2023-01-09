@@ -85,6 +85,7 @@ header {
     font-size: 16px;
     line-height: 19px;
     font-weight: 500;
+    
 }
 /*comportement au passage de la souris*/
 .navigation:hover {
@@ -119,8 +120,9 @@ h1 {
     display: flex;
     padding-top: 20px;
     padding-bottom: 32px;
-    width: 60%;
+    
     align-items: center;
+    
     
     
 
@@ -148,7 +150,7 @@ form {
     height: 49px;
     display: flex;
     
-    width: 231px;
+    width: 236px;
     
     
 }
@@ -177,7 +179,10 @@ button {
     font-size: 18px;
 
 }
-
+#glass {
+    color: white;
+    display: none;
+}
 /* Catégorie Filtres---------*/
 
 .filtergroup {
@@ -197,6 +202,7 @@ button {
     height: 100%;
     
 }
+
 
 
 .cardfilter {
@@ -236,6 +242,7 @@ input[type=checkbox] {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 24px;
   
 }
 
@@ -371,6 +378,7 @@ input[type=checkbox] {
 .cardboxpop {
     width: 100%;
     height: 144px; 
+    
 
 }
 .cardpop {
@@ -497,10 +505,11 @@ footer {
 }
 
 .foot {
-    width: 20%;
+    width: 23%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
     
 }
 .footnav {
@@ -513,5 +522,269 @@ footer {
 
 
 
+/*-----------------------------------------------------*/
+
+/* version tablette*/
+
+/*------------------------------------------------------*/
+
+@media screen and (max-width:992px) {
+    
+    h1 {
+        padding-bottom: 13px;
+    }
+    form {
+        width: 253px;
+    }
+    .filtergroup {
+        width: 97%;
+        
+    }
+    .cardfilter {
+        width: 20%;
+        justify-content: center;
+    }
+    #hebergement {
+        width: 100%;
+        
+        
+    }
+    #pop {
+        width: 100%;
+        padding-top: 34px;
+        padding-bottom: 48px;
+        margin-top: 53px;
+    }
+    .titrepop {
+        width: 90%;
+    }
+    #cardspop {
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+    }
+    .cardboxpop {
+        width: 31%;
+    }
+    .containerpop {
+        padding-left: 10px;
+        padding-right: 3px;
+    }
+    #activite {
+        padding-top: 70px;
+        padding-bottom: 69px;
+    }
+    .districts {
+        padding-top: 34px;
+
+        
+    }
+    .districtbox {
+        height: 267px;
+        width: 21%;
+    }
+    .containphotodistrict {
+        height: 211px;
+    }
+    
+}
+
+
+
+/*----------------------------------------------------------------*/
+
+/* version mobile*/
+
+/*----------------------------------------------------------------*/
+
+
+@media screen and (max-width:768px) {
+    header {
+        flex-wrap: wrap;
+        padding-top: 21px;
+        padding-bottom: 31px;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+
+    /*ordre des blocs dans main----------*/
+    .find {
+        order: -2;
+    }
+    #pop {
+        order: -1;
+    }
+    /*----------------------------------*/
+
+   
+    .containlogo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #logo {
+        padding-bottom: 48px;
+    }
+    .containmenu {
+        width: 100%;
+        
+    }
+    .menu {
+        
+        justify-content: space-around; 
+         
+        
+    }
+    .listnav {
+        width: 50%;
+        
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .navigation {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 23px;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    .navigation:hover {
+        
+        border-bottom: 3px solid #0065FC;
+        padding-top: 0px;
+        border-top: none;
+    }
+    .find {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .formulaire {
+        justify-content: center;
+        width: 100%;
+        padding-top: 36px;
+        padding-bottom: 34px;
+    }
+    form {
+        width: 232px;
+    }
+    #search {
+        display: none;
+    }
+    button {
+        width: 49px;
+    }
+    #glass {
+        display: flex;
+        justify-content: center;
+    }
+    .filtergroup {
+        flex-direction: column;
+        align-items: baseline;
+        width: 100%;
+        height: auto;
+        
+    }
+    .info {
+        padding-top: 43px;
+        padding-bottom: 0px;
+    }
+    .filters {
+        flex-wrap: wrap;
+        gap: 17px;
+        padding-top: 15px;
+
+    }
+    .cardfilter {
+        width: 47%;
+        font-size: 11px;
+        justify-content: flex-start;
+        padding-left: 12px;
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    .iconfilter {
+        font-size: 20px;
+    }
+    .info {
+        align-items: flex-start;
+    }
+    
+    
+    #pop {
+        width: 100%;
+        height: 520px;
+        border-radius:0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 28px;
+        
+    }
+    #cardspop {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 26px;
+        
+    
+    }
+    .cardboxpop {
+        width: 100%;
+    }
+    
+    #hebergement {
+        background-color: white;
+        padding-top: 26px;
+        padding-bottom: 93px;
+
+    }
+    .cards {
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+    .cardbox {
+        width: 100%;
+        padding-bottom: 12px;
+
+    }
+    #more {
+        display: none;
+    }
+    #activite {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0px;
+        padding-bottom: 80px;
+
+    }
+    .districts {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .districtbox {
+        width: 100%;
+        height: 190px;
+    }
+    .containphotodistrict {
+        height: 134px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-between;
+        
+        padding-left: 30px;
+        gap: 40px;
+        
+    }
+    .foot {
+        width: 60%;
+        gap: 20px;
+    }
+
+
+}
 
 
