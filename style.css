@@ -5,7 +5,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: 0px;
+    box-sizing: border-box;
     
 }
 /*comportement général-------------------------------*/
@@ -16,6 +16,7 @@ body{
     margin: auto;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    padding: 0 20px;
     
    
 }
@@ -27,7 +28,7 @@ i{
     color: #0065FC;
 }
 .greystar{
-    color: grey;
+    color: #F2F2F2
 }
 
 h1,h2 {
@@ -114,23 +115,28 @@ main{
 
 h1 {
     padding-bottom: 8px;
+   
 }
 
 .formulaire {
     display: flex;
     padding-top: 20px;
     padding-bottom: 32px;
-    
+    width: 100%;
     align-items: center;
     
     
     
 
 }
+.local {
+    width: 4%;
+    min-width: 50px;
+}
 
 #localisation {
     background-color: #F2F2F2;
-    width: 50px;
+    width: 100%;
     height: 49px;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
@@ -145,12 +151,15 @@ h1 {
     color: black;
 }
 
-
+.divlook {
+    width: 18%;
+    min-width: 236px;
+}
 form {
     height: 49px;
     display: flex;
     
-    width: 236px;
+    width: 100%;
     
     
 }
@@ -166,14 +175,19 @@ form {
 ::placeholder {
     color: black;
     font-size: 18px;
+    
 }
+.buttonlook {
+    width: 10%;
+    min-width: 132px;
 
+}
 button {
     background-color: #0065FC;
     color: white;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
-    width: 132px;
+    width: 100%;
     height: 49px;
     font-weight: 700;
     font-size: 18px;
@@ -188,9 +202,10 @@ button {
 .filtergroup {
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 100%;
     height: 50px;
     gap: 3%;
+    min-width: 1200px;
 
 }
 
@@ -198,7 +213,7 @@ button {
     display: flex;
     justify-content: space-between;
     
-    width: 100%;
+    width: 65%;
     height: 100%;
     
 }
@@ -210,11 +225,15 @@ button {
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     display: flex;
-    padding: 14px 20px;
+    padding: 14px 2%;
     gap: 10px;
     align-items: center;
     font-weight: 700;
     
+    
+}
+.iconfilter {
+    font-size: 22px;
 }
 input[type=checkbox] {
     display: none;
@@ -256,18 +275,20 @@ input[type=checkbox] {
 #hebergement {
     
     flex-wrap: wrap;
-    width: 61%;
+    width: 66%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 42px 40px 46px 40px;
+    padding: 42px 4% 46px 4%;
+    display: flex;
 }
 
 .cards{
     display: flex;
     flex-wrap: wrap;
     padding-top: 23px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     justify-content: space-between;
+    width: 100%;
     
     
 }
@@ -279,8 +300,9 @@ input[type=checkbox] {
 
 .card {
     background-color: white;
-    border-radius: 23px;
+    border-radius: 25px;
     width: 100%;
+    min-width: 200px;
     height: 199px;
    
     box-shadow: 1px 1px 10px rgba(35, 35, 35, 0.18);
@@ -289,7 +311,7 @@ input[type=checkbox] {
     flex-direction: column;
     
     overflow: hidden;
-    /*padding: 3px; padding supprimé au profit d'un border pour créer l'espace*/
+    
     border: 5px solid white;
     
     
@@ -299,11 +321,6 @@ input[type=checkbox] {
 .containcard {
     
     height: 110px;
-    
-    
-    
-    
-
 }
 
 
@@ -313,11 +330,6 @@ input[type=checkbox] {
    height: 100%;
    object-fit: cover;
    border-radius: 20px 20px 0px 0px;
-   
-  
-   
-    
-    
     
 }
 .container {
@@ -327,31 +339,34 @@ input[type=checkbox] {
     flex-direction: column;
     justify-content: center;
     gap: 8px;
-    padding-left: 16px;
+    padding-left: 6%;
     
     height: 100%;
 
     
 }
+.night {
+    font-size: 14px;
+}
 .stars {
     display: flex;
     color: #0065FC;
+    font-size: 12px;
+    
 }
 
 /*les plus populaires-------------------------------------------------*/
 #pop {
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 30%;
-    /*padding-left: 37px;
-    padding-right: 40px;*/
-    padding-top: 41px;
+    width: 31%;
+    padding-top: 42px;
     padding-bottom: 34px;
 
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
     
@@ -365,7 +380,7 @@ input[type=checkbox] {
 }
 #cardspop {
     width: 80%;
-    padding-top: 23px;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -377,18 +392,22 @@ input[type=checkbox] {
 }
 .cardboxpop {
     width: 100%;
+    min-width: 280px;
     height: 144px; 
     
 
 }
 .cardpop {
     background-color: white;
-    border-radius: 20px;
+    border-radius: 25px;
     width: 100%;
     height: 100%;
     box-shadow: 1px 1px 10px grey;
     display: flex;
-    padding: 3px;
+    
+    overflow: hidden;
+    
+    border: 5px solid white;
     
     
 }
@@ -411,12 +430,12 @@ input[type=checkbox] {
 .containerpop {
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
-    padding-right: 22px;
+    padding-left: 6%;
     justify-content: space-between;
     padding-top: 13px;
     padding-bottom: 9px;
     width: 60%;
+    
     
 }
 .namepop {
@@ -528,27 +547,50 @@ footer {
 
 /*------------------------------------------------------*/
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:1100px) {
     
     h1 {
         padding-bottom: 13px;
     }
-    form {
-        width: 253px;
+    .divlook {
+        width: 26%;
     }
+    
     .filtergroup {
-        width: 97%;
+        
+        min-width: initial;
         
     }
+    .filters {
+        width: 88%;
+        min-width: 650px;
+    }
     .cardfilter {
-        width: 20%;
+        
         justify-content: center;
     }
     #hebergement {
         width: 100%;
         
+        padding: 42px 0 46px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titrefind {
+        width: 90%;
+        
         
     }
+    
+    .cards {
+        
+        width: 90%;
+    }
+    #divmore {
+        width: 90%;
+        
+    }
+    
     #pop {
         width: 100%;
         padding-top: 34px;
@@ -557,15 +599,20 @@ footer {
     }
     .titrepop {
         width: 90%;
+        
     }
     #cardspop {
         flex-direction: row;
         width: 90%;
         justify-content: space-between;
+        padding-top: 26px;
     }
     .cardboxpop {
-        width: 31%;
+        width: 30%;
+        min-width: initial;
+        
     }
+    
     .containerpop {
         padding-left: 10px;
         padding-right: 3px;
@@ -589,6 +636,12 @@ footer {
     
 }
 
+@media screen and (max-width:825px) {
+    .cardboxpop {
+        min-height: 170px;
+    }
+    
+}
 
 
 /*----------------------------------------------------------------*/
@@ -599,6 +652,9 @@ footer {
 
 
 @media screen and (max-width:768px) {
+    body {
+        padding: 0;
+    }
     header {
         flex-wrap: wrap;
         padding-top: 21px;
@@ -661,19 +717,26 @@ footer {
         padding-right: 20px;
     }
     .formulaire {
-        justify-content: center;
+        
         width: 100%;
         padding-top: 36px;
         padding-bottom: 34px;
     }
-    form {
-        width: 232px;
+    .local {
+        width: 15%;
     }
+    .divlook {
+        width: 69%;
+        min-width: 232px;
+    }
+    
     #search {
         display: none;
     }
-    button {
-        width: 49px;
+    .buttonlook {
+        width: 15%;
+        min-width: 49px;
+        
     }
     #glass {
         display: flex;
@@ -694,16 +757,21 @@ footer {
         flex-wrap: wrap;
         gap: 17px;
         padding-top: 15px;
+        min-width: initial;
+        width: 100%;
+        
 
     }
     .cardfilter {
         width: 47%;
+        max-width: 300px;
         font-size: 11px;
         justify-content: flex-start;
-        padding-left: 12px;
+        padding-left: 5%;
         
         padding-top: 10px;
         padding-bottom: 10px;
+        gap: 7%;
         
     }
     .iconfilter {
@@ -716,33 +784,44 @@ footer {
     
     #pop {
         width: 100%;
-        height: 520px;
+        height: 100%;
         border-radius:0px;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 28px;
+        padding-bottom: 37px;
         
     }
     #cardspop {
         flex-direction: column;
         justify-content: space-between;
         padding-top: 26px;
+        width: 100%;
+        max-width: 500px;
         
     
     }
     .cardboxpop {
         width: 100%;
+        min-height: 144px;
+        padding-bottom: 11px;
     }
     
     #hebergement {
         background-color: white;
         padding-top: 26px;
         padding-bottom: 93px;
-
+        padding-left: 20px;
+        padding-right: 20px;
+        min-height: initial;
+        
     }
+    
     .cards {
         flex-direction: column;
         padding-bottom: 0px;
+        width: 100%;
+        max-width: 500px;
     }
     .cardbox {
         width: 100%;
@@ -757,11 +836,21 @@ footer {
         padding-right: 20px;
         padding-top: 0px;
         padding-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+
+    }
+    #titleactivite {
+        width: 90%;
     }
     .districts {
         flex-direction: column;
         gap: 24px;
+        width: 100%;
+        max-width: 500px;
+        
     }
     .districtbox {
         width: 100%;
