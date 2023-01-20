@@ -300,14 +300,15 @@ input[type=checkbox] {
 }
 .cardbox {
     width: 30%;
-    padding-bottom: 30px;   
+    padding-bottom: 30px;  
+    min-width: 160px; 
 }
 
 .card {
     background-color: white;
     border-radius: 25px;
     width: 100%;
-    min-width: 200px;
+    
     height: 199px;
     box-shadow: 1px 1px 10px rgba(35, 35, 35, 0.18); 
     display: flex;
@@ -318,6 +319,7 @@ input[type=checkbox] {
 
 .containcard {   
     height: 110px;
+    min-height: 110px;
 }
 
 .picsmarseille {   
@@ -330,9 +332,11 @@ input[type=checkbox] {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 8px;
+    justify-content: space-between;
+    
     padding-left: 6%; 
+    padding-top: 9px;
+    padding-bottom: 6px;
     height: 100%;  
 }
 .night {
@@ -378,7 +382,7 @@ input[type=checkbox] {
 }
 .cardboxpop {
     width: 100%;
-    min-width: 280px;
+    
     height: 144px; 
 }
 .cardpop {
@@ -520,7 +524,7 @@ footer {
 
 /*------------------------------------------------------*/
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:992px) {
     
     h1 {
         padding-bottom: 13px;
